@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProObject - Technical and Economic Foundation for Construction Deals</title>
+    <meta
+      name="description"
+      content="ProObject turns construction requests, photos, projects, BOQs and defect reports into structured tasks, clarification questions, preliminary estimates, execution context and closing documents."
+    />
+    <meta name="theme-color" content="#146b58" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="og-cover.png" />
+
+    <!--
+      Link previews. After the first deploy, replace the domain below with the
+      real production URL (og:url and og:image must be absolute).
+    -->
+    <link rel="canonical" href="https://proobject.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ProObject" />
+    <meta property="og:url" content="https://proobject.vercel.app/" />
+    <meta property="og:title" content="ProObject - the technical and economic foundation of a construction deal" />
+    <meta
+      property="og:description"
+      content="From a request, photo, project, BOQ or defect report to a structured task, clarification questions, a preliminary estimate and closing documents."
+    />
+    <meta property="og:image" content="https://proobject.vercel.app/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ProObject - AI-assisted construction workflow" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ProObject - the technical and economic foundation of a construction deal" />
+    <meta
+      name="twitter:description"
+      content="From a request, photo, project, BOQ or defect report to a structured task, clarification questions, a preliminary estimate and closing documents."
+    />
+    <meta name="twitter:image" content="https://proobject.vercel.app/og-cover.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ProObject home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>ProObject</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#problem" data-i18n="navProblem">Problem</a>
+        <a href="#workflow" data-i18n="navWorkflow">Workflow</a>
+        <a href="#result" data-i18n="navResult">Result</a>
+        <a href="#team" data-i18n="navTeam">Team</a>
+        <a href="#contact" data-i18n="navContact">Pilot</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-button active" type="button" data-lang-button="en">EN</button>
+        <button class="lang-button" type="button" data-lang-button="ru">RU</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">AI-assisted construction workflow</p>
+          <h1 data-i18n="heroTitle">ProObject — the technical and economic foundation of a construction deal.</h1>
+          <p class="support-line" data-i18n="heroSupportLine">Clear terms. Predictable outcomes.</p>
+          <p class="hero-lede" data-i18n="heroLede">
+            ProObject turns a request, photo, project, BOQ or defect report into a structured task, relevant questions,
+            a preliminary cost/time/team/risk estimate, execution context and closing documents.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact" data-i18n="ctaPilot">Discuss pilot</a>
+            <a class="button secondary" href="#workflow" data-i18n="ctaWorkflow">See workflow</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Product workflow summary">
+          <div class="signal-row">
+            <span class="signal-label" data-i18n="heroInput">Input</span>
+            <strong data-i18n="heroInputValue">Request, photo, project, BOQ, defect report, technical task</strong>
+          </div>
+          <ol class="flow-list">
+            <li data-i18n="heroFlowOne">User role and task purpose</li>
+            <li data-i18n="heroFlowTwo">Object passport and missing data</li>
+            <li data-i18n="heroFlowThree">Relevant customer questions</li>
+            <li data-i18n="heroFlowFour">Preliminary cost, team, timing and risks</li>
+            <li data-i18n="heroFlowFive">Proposal, execution, acceptance and closing documents</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="problem" class="section problem-band">
+        <div class="split">
+          <div>
+            <p class="eyebrow" data-i18n="problemEyebrow">Recognizable pain</p>
+            <h2 data-i18n="problemTitle">The job is already there. How do you determine the real scope and a defensible price?</h2>
+          </div>
+          <div class="text-column">
+            <p class="lead-text" data-i18n="problemLead">
+              For a solo master, a 2-5 person crew, a small contractor or a customer, the hard part often starts after
+              the request is received. The inputs are scattered, the work boundaries are unclear, and the price has to
+              be named before all conditions are understood.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="problemItemOne">Photos, descriptions, projects and tables rarely turn into a ready price by themselves.</li>
+              <li data-i18n="problemItemTwo">Materials, operations, people, timing, complications and expenses can be easy to miss.</li>
+              <li data-i18n="problemItemThree">The contractor is afraid to underprice and lose money, or overprice and lose the customer.</li>
+              <li data-i18n="problemItemFour">The customer does not always understand what is included and where extra charges may appear.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section calculator-band">
+        <div class="section-heading narrow">
+          <p class="eyebrow" data-i18n="calculatorEyebrow">Why a simple calculator is not enough</p>
+          <h2 data-i18n="calculatorTitle">Price is not only quantity times rate.</h2>
+          <p data-i18n="calculatorText">
+            Real work depends on site conditions and responsibility boundaries. Height, tight access, active systems,
+            restricted facilities, shutdowns, lifting, buried utilities, equipment, travel, mobilization, consumables,
+            documentation and testing can change labor, risk and price.
+          </p>
+        </div>
+        <div class="factor-strip" aria-label="Cost factors">
+          <span data-i18n="factorOne">Site conditions</span>
+          <span data-i18n="factorTwo">Access and shutdowns</span>
+          <span data-i18n="factorThree">Team and equipment</span>
+          <span data-i18n="factorFour">Documentation and tests</span>
+          <span data-i18n="factorFive">Responsibility boundaries</span>
+        </div>
+      </section>
+
+      <section id="workflow" class="section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="workflowEyebrow">How ProObject works</p>
+          <h2 data-i18n="workflowTitle">From source data to deal completion.</h2>
+          <p data-i18n="workflowText">
+            ProObject supports a construction task across the working cycle: from source-data review and alignment of
+            conditions to execution, acceptance, settlement and closing documents.
+          </p>
+        </div>
+        <div class="workflow-grid">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="workflowOneTitle">Role and purpose</h3>
+            <p data-i18n="workflowOneText">First, ProObject identifies who is using it and what result is needed: quick decision, estimate, proposal, customer roadmap or comparison.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="workflowTwoTitle">Source data</h3>
+            <p data-i18n="workflowTwoText">The user enters or uploads a request, description, photos, project, BOQ, defect report or technical task.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="workflowThreeTitle">Object passport and known scope</h3>
+            <p data-i18n="workflowThreeText">Known work scope, conditions, documents, deadlines, budget hints and requirements are structured into one object record.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3 data-i18n="workflowFourTitle">Gaps, risks and factors</h3>
+            <p data-i18n="workflowFourText">The system highlights missing data, site risks, complications, work boundaries and responsibility zones that affect labor, duration and cost.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3 data-i18n="workflowFiveTitle">Questions and customer message</h3>
+            <p data-i18n="workflowFiveText">ProObject prepares relevant clarification questions and a professional customer message, skipping what is already clear from the request, photos, BOQ, defect report or project.</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3 data-i18n="workflowSixTitle">Answers and boundaries recorded</h3>
+            <p data-i18n="workflowSixText">Customer answers are saved as source data, assumptions, work boundaries and responsibility zones.</p>
+          </article>
+          <article>
+            <span>07</span>
+            <h3 data-i18n="workflowSevenTitle">Defensible estimate</h3>
+            <p data-i18n="workflowSevenText">Works, materials, team, timing, expenses, risks and price range are calculated with visible assumptions. Better inputs narrow the range but do not make it a guaranteed final estimate.</p>
+          </article>
+          <article>
+            <span>08</span>
+            <h3 data-i18n="workflowEightTitle">Agreement and execution tracking</h3>
+            <p data-i18n="workflowEightText">Proposal, response, contract, stages, schedule, condition changes and completed work confirmations are kept in the same object context.</p>
+          </article>
+          <article>
+            <span>09</span>
+            <h3 data-i18n="workflowNineTitle">Acceptance, settlement and closing</h3>
+            <p data-i18n="workflowNineText">Completion acts, closing and as-built documents, stage confirmations, final settlement status and the object archive close the deal loop.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section document-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="documentEyebrow">Roadmap module: Documents</p>
+          <h2 data-i18n="documentTitle">A dedicated document module follows the actual deal scenario.</h2>
+          <p data-i18n="documentText">
+            ProObject is planned to include a separate Documents module: not a generic library, but a role-, object-,
+            work- and stage-aware document base connected to the object card.
+          </p>
+        </div>
+        <div class="document-grid">
+          <article>
+            <h3 data-i18n="documentTechTitle">Prepared by context</h3>
+            <p data-i18n="documentTechText">Requests for source data, questionnaires, technical notes, BOQs, defect reports, proposals, estimates and work plans are selected by scenario.</p>
+          </article>
+          <article>
+            <h3 data-i18n="documentContractTitle">Linked to the object card</h3>
+            <p data-i18n="documentContractText">Documents can use known details, scope, stages and responsibility boundaries, with versions, statuses, change log and links between documents.</p>
+          </article>
+          <article>
+            <h3 data-i18n="documentCloseTitle">Tracked through the deal</h3>
+            <p data-i18n="documentCloseText">The module tracks what is required, prepared, agreed, signed or missing: from contracts and addenda to as-built, acceptance, KS-2/KS-3 where applicable, warranty and archive.</p>
+          </article>
+        </div>
+        <p class="section-note" data-i18n="documentNote">
+          This is part of the product roadmap. Templates and reference materials do not replace dedicated legal or
+          technical review where it is required; future signing and handover flows require separate legal and technical design.
+        </p>
+      </section>
+
+      <section id="result" class="section outcome-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="outcomeEyebrow">Result for both sides</p>
+          <h2 data-i18n="outcomeTitle">One environment from inputs and price to closing documents.</h2>
+          <p class="philosophy-line" data-i18n="outcomePhilosophy">
+            We do not position one side against the other. We create a clear technical and economic foundation on which
+            customers and contractors can align expectations and work toward the intended result.
+          </p>
+        </div>
+        <div class="outcome-grid" aria-label="Contractor and customer outcomes">
+          <article>
+            <h3 data-i18n="contractorTitle">Contractor</h3>
+            <p data-i18n="contractorText">Understands scope, costs, team, timing and risks, then protects expected profit with a reasoned price instead of guessing.</p>
+          </article>
+          <article class="outcome-center">
+            <h3 data-i18n="sharedTitle">Shared basis</h3>
+            <p data-i18n="sharedText">If source data is insufficient or the economics do not fit, it becomes visible before the contract. The same environment can then support agreement, execution, acceptance, settlement and closing documents.</p>
+          </article>
+          <article>
+            <h3 data-i18n="customerTitle">Customer</h3>
+            <p data-i18n="customerText">Gets a clearer scope, expected result, budget range, stages and questions for comparing offers by the same conditions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section">
+        <div class="split">
+          <div>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Why we can build it</p>
+            <h2 data-i18n="experienceTitle">Not just AI. Full-cycle construction experience.</h2>
+          </div>
+          <div class="text-column">
+            <p class="lead-text" data-i18n="experienceLead">
+              Generic AI can write text. ProObject is built on 20 years of hands-on experience and must know what to ask,
+              what affects price and where a real object usually loses money and time.
+            </p>
+            <ul class="compact-list">
+              <li data-i18n="experienceOne">Permits and source documentation.</li>
+              <li data-i18n="experienceTwo">Engineering network and pipeline design.</li>
+              <li data-i18n="experienceThree">BOQs, estimates, commercial proposals and contractor economics.</li>
+              <li data-i18n="experienceFour">Contracts, correspondence and customer coordination.</li>
+              <li data-i18n="experienceFive">Installation organization and hands-on field practice.</li>
+              <li data-i18n="experienceSix">Technical office work, as-built documentation, testing and handover.</li>
+            </ul>
+            <p data-i18n="experienceNote">
+              This experience becomes product logic: clarification questions, source-data checks, risk categories and
+              the structure of the preliminary estimate process. Legal documents and settlement mechanics require
+              dedicated legal review before production use.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section marketplace-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="marketplaceEyebrow">Not a response marketplace first</p>
+          <h2 data-i18n="marketplaceTitle">First: analyze, clarify, estimate, document. Later: match.</h2>
+          <p data-i18n="marketplaceText">
+            Profi.ru, Vsem Podryad, Biddaro and similar services help users find requests or contacts. ProObject starts
+            after the request appears: it turns fragmented inputs into a managed engineering and commercial process.
+            A future marketplace can connect customers and contractors around a structured task and transparent
+            conditions, not only around a contact.
+          </p>
+        </div>
+      </section>
+
+      <section class="section growth-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="growthEyebrow">Product depth</p>
+          <h2 data-i18n="growthTitle">From engineering assistant to construction deal infrastructure.</h2>
+          <p data-i18n="growthText">
+            ProObject develops step by step: each next capability builds on a useful working scenario and expands it
+            without turning the public roadmap into a technical specification.
+          </p>
+        </div>
+        <ol class="growth-ladder">
+          <li>
+            <h3 data-i18n="growthOneTitle">Review and estimate</h3>
+            <p data-i18n="growthOneText">Role, source data, known scope, risks, questions, preliminary cost, timing and team.</p>
+          </li>
+          <li>
+            <h3 data-i18n="growthTwoTitle">Documents and object tracking</h3>
+            <p data-i18n="growthTwoText">Proposals, contracts, schedules, acts, as-built and closing documents, versions and change log.</p>
+          </li>
+          <li>
+            <h3 data-i18n="growthThreeTitle">Party interaction and transparent deal</h3>
+            <p data-i18n="growthThreeText">Customers and contractors align terms, stages, acceptance and, in the future, staged settlement through permitted infrastructure.</p>
+          </li>
+          <li>
+            <h3 data-i18n="growthFourTitle">International development and localization</h3>
+            <p data-i18n="growthFourText">The product is not limited to one country: language, currency, regulations, document forms, payments and legal requirements are localized by market.</p>
+          </li>
+        </ol>
+        <p class="section-note" data-i18n="growthNote">
+          ProObject starts with a clear answer to "what needs to be done here and what should it cost" and can grow into
+          an environment where parties find each other, align terms, work through documents, accept stages and settle
+          transparently. Future staged settlement can be supported only through permitted payment infrastructure and
+          after legal, security and compliance design. The MVP does not try to implement the whole market at once, but
+          the architecture should not require rebuilding the product from scratch.
+        </p>
+      </section>
+
+      <section class="section pricing-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="pricingEyebrow">Payment for useful output</p>
+          <h2 data-i18n="pricingTitle">No artificial paywall around basic clarity.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article>
+            <h3 data-i18n="pricingManualTitle">Manual input</h3>
+            <p data-i18n="pricingManualText">Basic path: the user enters volumes, materials and conditions manually and gets a useful preliminary structure.</p>
+          </article>
+          <article>
+            <h3 data-i18n="pricingDocsTitle">Photo and document analysis</h3>
+            <p data-i18n="pricingDocsText">Paid intelligent processing saves time: photos, projects, BOQs and defect reports influence questions, risks and estimate confidence.</p>
+          </article>
+          <article>
+            <h3 data-i18n="pricingProTitle">Extended estimate and documents</h3>
+            <p data-i18n="pricingProText">Next level: fuller estimate, response draft, proposal outline, customer roadmap or document pack for a professional next step.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section accessibility-section">
+        <div class="split">
+          <div>
+            <p class="eyebrow" data-i18n="accessEyebrow">Accessible by design</p>
+            <h2 data-i18n="accessTitle">Professional logic without bureaucratic friction.</h2>
+          </div>
+          <div class="text-column">
+            <p data-i18n="accessText">
+              The interface should use clear field names, short profile questions and a compact glossary for terms such
+              as BOQ, technical task, as-built documentation, technical office and completion documents. The public
+              interface avoids personal author labels; future users work under registered accounts or nicknames, while
+              internal authorship and version history remain in the project records.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-section">
+        <div class="trust-grid">
+          <article>
+            <h3 data-i18n="trustSecurityTitle">Security and privacy</h3>
+            <p data-i18n="trustSecurityText">Confidential files stay off-chain. The architecture is designed around data minimization, role-based access, encryption, event audit, version history, secure uploads, backups and AI-output controls.</p>
+          </article>
+          <article>
+            <h3 data-i18n="trustBlockchainTitle">Verifiable digital record, not technology for its own sake</h3>
+            <p data-i18n="trustBlockchainText">Future integrations may use neutral digital fixation of key events, document fingerprints and status records. No token or real-funds custody is promised in the MVP.</p>
+          </article>
+          <article>
+            <h3 data-i18n="trustMvpTitle">Current status</h3>
+            <p data-i18n="trustMvpText">A local MVP and public proof materials are being prepared for pilots, grants and partner conversations using public-safe or synthetic data.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="team" class="section team-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="teamEyebrow">Team and technical proof</p>
+          <h2 data-i18n="teamTitle">Domain expertise plus a developer who can explain the code.</h2>
+          <p data-i18n="teamText">
+            The product is built by two people with clearly separated roles: two decades of field and technical-office
+            practice on one side, and hands-on implementation on the other. We describe the current stage as it is,
+            without claiming capabilities the project has not reached yet.
+          </p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <h3>Vitaliy Tolkov</h3>
+            <p class="team-role" data-i18n="vitaliyRole">Founder, domain expert</p>
+            <p data-i18n="vitaliyBio">
+              Twenty years of full-cycle construction practice: permits and source documentation, engineering network
+              design, BOQs and contractor economics, contracts and customer coordination, installation organization,
+              as-built documentation, testing and handover. This experience defines the product logic.
+            </p>
+          </article>
+          <article class="team-card">
+            <h3>Nikita Tolkov</h3>
+            <p class="team-role" data-i18n="nikitaRoleFull">Core developer</p>
+            <p data-i18n="nikitaBio">
+              Core developer of the current ProObject prototype and of the planned public-safe XRPL proof module. Holds a
+              vocational qualification in software development and is continuing his education in artificial intelligence
+              and technology. Responsible for product implementation, structured-data workflows and test automation. XRPL
+              expertise is being built through a working, documented proof rather than claimed prior production
+              blockchain experience.
+            </p>
+            <a class="team-link" href="https://github.com/Ruxoniks" target="_blank" rel="noopener noreferrer">
+              github.com/Ruxoniks
+            </a>
+          </article>
+        </div>
+        <div class="proof-card">
+          <div>
+            <p class="proof-status" data-i18n="proofStatus">In preparation</p>
+            <h3 data-i18n="proofTitle">Public-safe XRPL proof module</h3>
+            <p data-i18n="proofText">
+              A separate public repository will demonstrate, on synthetic data only, how a construction document
+              fingerprint and a milestone status can be recorded on XRPL Testnet. Documents stay off-chain, no real funds
+              are used and no token is issued. The commercial core of ProObject is not part of that repository.
+            </p>
+          </div>
+          <!--
+            When proobject-xrpl-proof-module is public and its README is ready,
+            replace this note with a direct link to the repository. Do not link
+            to a repository that does not exist yet.
+          -->
+          <p class="proof-note" data-i18n="proofNote">
+            The repository link will be published here once the module and its run instructions are ready for external
+            review.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact">
+          <div>
+            <p class="eyebrow" data-i18n="contactEyebrow">Pilot, partnership, grant, investment</p>
+            <h2 data-i18n="contactTitle">Pilot the workflow with real requests.</h2>
+            <p data-i18n="contactText">
+              ProObject is open to focused pilots with masters, crews, contractors and customers, plus ecosystem,
+              grant and investment conversations. The page is a public product proof, not a disclosure of the internal
+              calculation base.
+            </p>
+          </div>
+          <div class="contact-box">
+            <p><strong>Vitaliy Tolkov</strong><br /><span data-i18n="vitaliyRole">Founder, domain expert</span></p>
+            <a href="mailto:vitalijtolkov487@gmail.com">vitalijtolkov487@gmail.com</a>
+            <p><strong>Nikita Tolkov</strong><br /><span data-i18n="nikitaRole">Developer</span></p>
+            <a href="mailto:ntolkov06@gmail.com">ntolkov06@gmail.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="disclosure" aria-label="Disclosure">
+        <p data-i18n="disclosureText">
+          Public disclosure boundary: this page does not disclose internal formulas, coefficients, prompts, matching or
+          scoring logic, real customer documents, real case database or private roadmap. Preliminary outputs are
+          decision-support only and do not replace design, official estimates, contracts, legal review or professional
+          on-site inspection.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

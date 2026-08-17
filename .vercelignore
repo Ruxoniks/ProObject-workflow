@@ -1,0 +1,10 @@
+# Deny by default: nothing is uploaded to the deployment unless it is
+# explicitly re-included below. Only public/ is meant to be served.
+#
+# If this file is ever misconfigured, the build fails loudly with a missing
+# output directory instead of silently publishing an internal document.
+*
+
+!public/
+!public/**
+!vercel.json
